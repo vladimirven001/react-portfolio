@@ -18,7 +18,7 @@ export default function Home() {
       <main>
 
         <Header />
-
+        <h1>Bonjour</h1>
         <Footer />
 
         
