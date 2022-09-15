@@ -6,7 +6,8 @@ import NavItem from "./NavItem";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
-  { text: "About Us", href: "/about" },
+  { text: "Experience", href: "/experience" },
+  { text: "Education", href: "/education" },
   { text: "Contact", href: "/contact" },
 ];
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
       <nav className={`nav`}>
         <Link href={"/"}>
           <a>
-            <h1 className="logo">CodeWithMarish</h1>
+            <h1 className="logo">Vladimir Venkov</h1>
           </a>
         </Link>
         <div
