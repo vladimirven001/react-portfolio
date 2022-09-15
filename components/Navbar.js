@@ -19,7 +19,9 @@ const Navbar = () => {
       <nav className={`nav`}>
         <Link href={"/"}>
           <a>
-            <h1 className="logo">Vladimir Venkov</h1>
+            <h1 className="smallLogo"> {"<"}div{">"} </h1>
+            <h1 className="logo"> {"\u00a0\u00a0\u00a0"}Vladimir Venkov </h1>
+            <h1 className="smallLogo"> {"<"}{"/"}div{">"} </h1>
           </a>
         </Link>
         <div
