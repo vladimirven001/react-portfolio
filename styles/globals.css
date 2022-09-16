@@ -93,7 +93,7 @@ nav{
     height: 6px;
     bottom: -16px;
     left: 0;
-    background-color: black;
+    background-color: #dedede;
     transition: all 0.2s;
   }
   

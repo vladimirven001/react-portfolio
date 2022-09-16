@@ -1,22 +1,24 @@
 
 .eqi_container {
-    position: relative;
+
+    position:relative;
     bottom: 0px;
     width: 100%;
+    height: auto;
     background-color: #131515;
     display: flex;
     justify-content: space-between;
-
+    margin-top: auto;
   }
 
 .eqi_container div {
-
+    
     color:aliceblue;
     margin-top: 30px;
     margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0);
+    background: #131515;
     justify-content: center;
     display: flex;
     flex-grow: 1;
+  }
 
-}

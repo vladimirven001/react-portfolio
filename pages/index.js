@@ -1,10 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Footer from '../components/Footer'
-import Header from '../components/Header'
-import MyApp from './_app'
-
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -15,11 +11,17 @@ export default function Home() {
         <link rel="icon" href='/Letter-V.ico' />
 
       </Head>
-          
-      <main>
 
-        <h1 style={{textAlign: "center"}} >Bonjour</h1>
+         
+      <main>
+        <div className={styles.pagecontainer}>
+          <div>
+            
+            <h1 style={{textAlign: "center"}} >Vladimir Venkov</h1>
         
+          </div>
+        </div>
+
         <Footer />
 
       </main>
