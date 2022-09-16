@@ -14,7 +14,7 @@ export default function Home() {
 
          
       <main>
-        <div className={styles.pagecontainer}>
+        <div>
           <div>
             
             <h1 style={{textAlign: "center"}} >Vladimir Venkov</h1>
