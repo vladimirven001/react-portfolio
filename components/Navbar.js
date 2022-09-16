@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
-
+ // this a navbar taken from 
 const MENU_LIST = [
   { text: "Home", href: "/" },
   { text: "Experience", href: "/experience" },
@@ -19,9 +19,9 @@ const Navbar = () => {
       <nav className={`nav`}>
         <Link href={"/"}>
           <a>
-            <h1 className="smallLogo"> {"<"}div{">"} </h1>
+            <h1 className="logo" style={{ color: "#616262", fontSize: "1.25rem"}}> {"<"}div{">"} </h1>
             <h1 className="logo"> {"\u00a0\u00a0\u00a0"}Vladimir Venkov </h1>
-            <h1 className="smallLogo"> {"<"}{"/"}div{">"} </h1>
+            <h1 className="logo" style={{ color: "#616262", fontSize: "1.25rem"}}> {"<"}{"/"}div{">"} </h1>
           </a>
         </Link>
         <div

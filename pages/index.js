@@ -18,7 +18,7 @@ export default function Home() {
           
       <main>
 
-        <h1>Bonjour</h1>
+        <h1 style={{textAlign: "center"}} >Bonjour</h1>
         
         <Footer />
 
