@@ -14,15 +14,14 @@ export default function Home() {
       </Head>
         
          
-      <main>
+      <div className={styles.principal}>
         
-            
         <h1 style={{textAlign: "center"}} >Vladimir Venkov</h1>
         
-
         <Footer />
-
-      </main>
+      
+      </div>
+      
     </div>
 
   )

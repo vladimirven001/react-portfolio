@@ -16,11 +16,13 @@ header{
   top: 0;
 }
 html{
-  width: 100%;
   height: 100%;
   background-color: #131515;
   color: #dedede;
   box-sizing: border-box;
+}
+body{
+  margin: 0;
 }
 main{
   margin: 0;
@@ -28,7 +30,6 @@ main{
   min-height: 100%;
   position: relative;
   box-sizing: inherit;
-  /* padding-bottom: calc(10vh + 12px); */
 }
 nav{
   display: flex;
