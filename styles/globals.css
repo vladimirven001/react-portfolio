@@ -20,6 +20,15 @@ html{
   height: 100%;
   background-color: #131515;
   color: #dedede;
+  box-sizing: border-box;
+}
+main{
+  margin: 0;
+  min-width: auto;
+  min-height: 100%;
+  position: relative;
+  box-sizing: inherit;
+  /* padding-bottom: calc(10vh + 12px); */
 }
 nav{
   display: flex;

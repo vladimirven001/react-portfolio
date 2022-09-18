@@ -6,11 +6,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Navbar />
-      <div>
-        <div className={styles.pagecontainer}>
-
-        </div>
-      </div>
+      
+      
       <Component {...pageProps} />
     </div>
   )
