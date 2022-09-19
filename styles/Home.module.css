@@ -1,22 +1,18 @@
 .container {
-  height: 100%;
+  height: calc(100% - 10vh - max(17px, 0.9vw));
   width: 100%;
-  position:fixed;
+  position: fixed;
   overflow-y: auto;
-}
+} 
 
 .principal {
-  min-height: 100%;
-  margin: 0;
-  min-width: auto;
-  box-sizing: inherits;
-  padding-bottom: calc(10vh + 20px);
-  position: relative;
-  justify-content: center;
-  align-items: center;
+    margin: 0;
+    min-width: auto;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: calc(2rem + 17px + 2px);
+    box-sizing: inherit;
 }
-
-
 
 .footer {
   display: flex;

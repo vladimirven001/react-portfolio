@@ -17,19 +17,10 @@ header{
 }
 html{
   height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
   background-color: #131515;
   color: #dedede;
-  box-sizing: border-box;
-}
-body{
-  margin: 0;
-}
-main{
-  margin: 0;
-  min-width: auto;
-  min-height: 100%;
-  position: relative;
-  box-sizing: inherit;
 }
 nav{
   display: flex;
@@ -84,6 +75,7 @@ nav{
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (min-width: 768px) {
   .nav__menu-bar{
     display: none;
