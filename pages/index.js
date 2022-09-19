@@ -11,8 +11,9 @@ export default function Home() {
           <link rel="icon" href='/Letter-V.ico' />
         </Head>
         <div className={styles.principal}>
-          <h1 style={{ textAlign: "center" }}>Vladimir Venkov</h1>
-
+          <div className="center">
+            <h1>Vladimir Venkov</h1>
+          </div>
           <Footer />
         </div>
       </div>
