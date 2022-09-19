@@ -6,7 +6,7 @@ export default function p()
         
         <div className={styles.eqi_container}>
             
-            <div>Vladimir Venkov</div> 
+            <div>vladimir venkov</div> 
             <div>(514) 963-4544 </div>  
             <div>vladimir.venkov@mail.mcgill.ca</div>
             

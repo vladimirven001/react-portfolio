@@ -11,9 +11,13 @@ export default function Home() {
           <link rel="icon" href='/Letter-V.ico' />
         </Head>
         <div className={styles.principal}>
-          <div className="center">
-            <h1>Vladimir Venkov</h1>
+          <div className={styles.textTitle}>
+            <h1 style={{fontWeight:"normal"}}>hey, vlad here</h1>
           </div>
+          <div className={styles.textSubtitle}>
+            <p>software engineering student at mcgill university, in montreal</p>
+          </div>
+
           <Footer />
         </div>
       </div>
