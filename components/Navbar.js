@@ -5,6 +5,7 @@ import NavItem from "./NavItem";
 const MENU_LIST = [
   { text: "experience", href: "/experience" },
   { text: "education", href: "/education" },
+  { text: "skills", href: "/skills" },
   { text: "contact", href: "/contact" },
 ];
 const Navbar = () => {

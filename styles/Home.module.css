@@ -15,15 +15,15 @@
 }
 
 .textTitle {
-  padding-top: 27vh;
-  font-size: max(5vh, 30px) ;
+  padding-top: 26vh;
+  font-size: max(5.4vh, 36px) ;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .textSubtitle {
-  font-size: max(2vh, 20px) ;
+  font-size: max(1.8vh, 12px);
   display: flex;
   justify-content: center;
   align-items: center;

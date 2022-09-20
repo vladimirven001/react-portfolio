@@ -15,7 +15,14 @@ export default function Home() {
             <h1 style={{fontWeight:"normal"}}>hey, vlad here</h1>
           </div>
           <div className={styles.textSubtitle}>
-            <p>software engineering student at mcgill university, in montreal</p>
+            <p style={{fontFamily: "consolas"}}>software engineering student at mcgill university, montreal</p>
+          </div>
+          <div className={styles.textSubtitle}>
+            <ol>
+              <li>experienced in salesmanship, leadership, and more</li>
+              <li>currently in the first year of a four year program of co-op software engineering</li>
+              <li>good knowledge in python, c#, html, css </li>
+            </ol>
           </div>
 
           <Footer />

@@ -1,15 +1,15 @@
 import React from "react";
 import Footer from '../components/Footer'
 
-const contact = () => {
+const skills = () => {
   return (
     <>
       <div className="center">
-        <h2>contact</h2>
+        <h2>skills</h2>
       </div>
       <Footer />
     </>
   );
 };
 
-export default contact;
+export default skills;

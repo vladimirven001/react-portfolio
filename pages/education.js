@@ -1,11 +1,15 @@
 import React from "react";
+import Footer from '../components/Footer'
 
-const Education = () => {
+const education = () => {
   return (
-    <div className="center">
-      <h2>Education</h2>
-    </div>
+    <>
+      <div className="center">
+        <h2>education</h2>
+      </div>
+      <Footer />
+    </>
   );
 };
 
-export default Education;
+export default education;
