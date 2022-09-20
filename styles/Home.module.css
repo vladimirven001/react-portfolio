@@ -15,7 +15,7 @@
 }
 
 .textTitle {
-  padding-top: 26vh;
+  padding-top: 20vh;
   font-size: max(5.4vh, 36px) ;
   display: flex;
   justify-content: center;
@@ -28,6 +28,28 @@
   justify-content: center;
   align-items: center;
   color: #3DB8A5;
+}
+
+.textList {
+  margin-top: 0.2vh;
+  font-size: max(1.8vh, 12px);
+  text-align: center;
+  color: #dedede;
+}
+
+.textList  p {
+  font-size: max(1.8vh, 12px);
+  display: inline-block;
+  text-align: center;
+  color: #dedede;
+}
+
+.textLink{
+  margin-top:1vh;
+  font-weight: bold;
+  text-decoration:underline;
+  color: #3DB8A5;
+  font-family: consolas;
 }
 
 .title a {
