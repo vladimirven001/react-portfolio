@@ -1,0 +1,6 @@
+.item {
+    width: 190px;
+    height: 195px;
+    background-color: #fff;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
