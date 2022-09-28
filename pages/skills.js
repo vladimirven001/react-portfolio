@@ -8,18 +8,12 @@ const skills = () => {
     <>
       <div className={styles2.container}>
         <div className={styles2.principal}>
-          <div className="center">
-            <h2>skills</h2>
-          </div>
-      
+              
           <div>
             <div className={styles.honey}>
               <div className={styles.row_1}>
                 <div className={styles.item}>
-
-                </div>
-                <div className={styles.item}>
-
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style={{height:"140px"}}/>
                 </div>
                 <div className={styles.item}>
 
@@ -54,6 +48,11 @@ const skills = () => {
                 <div className={styles.item}>
               
                 </div>
+                <div className={styles.item}>
+              
+                </div>
+              </div>
+              <div className={styles.row_4}>
                 <div className={styles.item}>
               
                 </div>

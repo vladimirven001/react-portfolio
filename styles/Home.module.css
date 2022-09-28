@@ -1,5 +1,5 @@
 .container {
-  height: calc(100% - 10vh - max(17px, 0.9vw));
+  height: calc(100% - 10vh - 18px);
   width: 100%;
   position: fixed;
   overflow-y: auto;
@@ -10,7 +10,7 @@
     min-width: auto;
     min-height: 100%;
     position: relative;
-    padding-bottom: calc(2rem + 17px + 2px);
+    padding-bottom: calc(10vh + 18px + 4px);
     box-sizing: inherit;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .textSubtitle {
-  font-size: max(1.8vh, 12px);
+  font-size: max(1.8vh, 15px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +32,13 @@
 
 .textList {
   margin-top: 0.2vh;
-  font-size: max(1.8vh, 12px);
+  font-size: max(1.8vh, 15px);
   text-align: center;
   color: #dedede;
 }
 
 .textList  p {
-  font-size: max(1.8vh, 12px);
+  font-size: max(1.8vh, 15px);
   display: inline-block;
   text-align: center;
   color: #dedede;
