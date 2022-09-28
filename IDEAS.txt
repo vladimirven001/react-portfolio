@@ -1,0 +1,12 @@
+https://anniebombanie.com/#work
+	skills section
+	work/experience section
+		include screenshots of the tabs of NIM GAME and projects from COMP 208
+
+education section
+	make progress bars
+	University
+		Civil engineering (potentially minor)
+		Software 25%
+		high school and CEGEP 100%
+		
