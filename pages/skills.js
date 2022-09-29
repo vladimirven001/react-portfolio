@@ -16,25 +16,25 @@ const skills = () => {
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style={{height:"140px"}}/>
                 </div>
                 <div className={styles.item}>
-
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style={{height:"140px"}}/>
                 </div>
               </div>
 
               <div className={styles.row_2}>
                 <div className={styles.item}>
-              
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
                 </div>
                 <div className={styles.item}>
-              
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" style={{height:"140px"}}/>
                 </div>
                 <div className={styles.item}>
-              
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
                 </div>
                 <div className={styles.item}>
-              
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                 </div>
                 <div className={styles.item}>
-              
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
                 </div>
               </div>
 
