@@ -1,14 +1,16 @@
 import React from "react";
 import Footer from '../components/Footer'
-import styles2 from '../styles/Home.module.css'
+import stylesMain from '../styles/Home.module.css'
+import ProgressBar from '../components/ProgressBar'
+
 const education = () => {
   return (
     <>
-      <div className={styles2.container}>
-        <div className={styles2.principal}>
-          <div className="center">
-            <h2>education</h2>
-          </div>
+      <div className={stylesMain.container}>
+        <div className={stylesMain.principal}>
+            <div>
+              <ProgressBar />
+            </div>
           <Footer />
         </div>
       </div>
