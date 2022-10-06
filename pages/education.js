@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from '../components/Footer'
 import stylesMain from '../styles/Home.module.css'
-import ProgressBar from '../components/ProgressBar'
+import EducationBar from "../components/ProgressBar";
 
 const education = () => {
   return (
@@ -9,7 +9,8 @@ const education = () => {
       <div className={stylesMain.container}>
         <div className={stylesMain.principal}>
             <div>
-              <ProgressBar />
+              <h1>Education</h1>
+              <EducationBar/> 
             </div>
           <Footer />
         </div>
