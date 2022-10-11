@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import NavItem from "./NavItem";
  // this a navbar taken from 
-const MENU_LIST = [
+const menu_list = [
   { text: "experience", href: "/experience" },
   { text: "education", href: "/education" },
   { text: "skills", href: "/skills" },
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div></div>
         </div>
         <div className={`${navActive ? "active" : ""} nav__menu-list`}>
-          {MENU_LIST.map((menu, idx) => (
+          {menu_list.map((menu, idx) => (
             <div
               onClick={() => {
                 setActiveIdx(idx);
