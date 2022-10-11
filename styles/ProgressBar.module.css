@@ -1,0 +1,34 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar{
+	width: 60vh;
+	height: 5vh;
+    border-radius: 5px;
+	background-color: #eee;
+    position: relative;
+}
+
+.first{
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -1%;
+    background-color: brown;
+    z-index: 9999;
+}
+
+.second{
+    height: 100%;
+    width: 69%;
+    margin-left: 10%;
+    border-radius: 5px;
+    position: absolute;
+    background-color: aqua;
+	height: 100%;
+}
+

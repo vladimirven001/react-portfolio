@@ -1,17 +1,20 @@
 import React from "react";
 import Footer from '../components/Footer'
 import stylesMain from '../styles/Home.module.css'
-import EducationBar from "../components/ProgressBar";
+import stylesEducation from '../styles/Education.module.css'
+import ProgressBar from "../components/ProgressBar";
 
 const education = () => {
   return (
     <>
       <div className={stylesMain.container}>
         <div className={stylesMain.principal}>
-            <div>
-              <h1>Education</h1>
-              <EducationBar/> 
-            </div>
+          <div className={stylesEducation.textTitle}>
+            <h1 style={{fontWeight:"normal"}}>Education</h1>
+          </div>
+
+          <ProgressBar />
+          
           <Footer />
         </div>
       </div>

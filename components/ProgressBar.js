@@ -1,13 +1,18 @@
-import {ProgressBar} from 'react-bootstrap';
+import React from 'react'
+import styles from '../styles/ProgressBar.module.css'
 
-function EducationBar() {
+export default function Progressbar() {
   return (
-    <ProgressBar>
-      <ProgressBar striped variant="success" now={35} key={1} />
-      <ProgressBar variant="warning" now={20} key={2} />
-      <ProgressBar striped variant="danger" now={10} key={3} />
-    </ProgressBar>
-  );
-}
+	  <div className={styles.main}>
+		  <div className={styles.progressbar}>
+			  <div className={styles.first}>
 
-export default EducationBar;
+        </div>
+        <div className={styles.second}>
+
+        </div>
+          
+      </div>
+		</div>
+  )
+}

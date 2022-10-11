@@ -1,0 +1,16 @@
+.textTitle {
+    padding-top: 5vh;
+    font-weight: normal;
+    font-size: max(5.4vh, 36px) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.textSubtitle {
+    font-size: max(1.8vh, 15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3DB8A5;
+  }
