@@ -7,6 +7,12 @@
     align-items: center;
     justify-content: center;
 }
+.honey{
+    margin:auto;
+}
+.honey img{
+    height:140px;
+}
 .row_1{
     display: grid;
     justify-content: center;
