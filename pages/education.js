@@ -2,7 +2,6 @@ import React from "react";
 import Footer from '../components/Footer'
 import stylesMain from '../styles/Home.module.css'
 import stylesEducation from '../styles/Education.module.css'
-import ProgressBar from "../components/ProgressBar";
 
 const education = () => {
   return (
@@ -28,13 +27,25 @@ const education = () => {
               </div>
             </div>
             <div className={stylesEducation.bottomContainer}>
-              <div>
-                <p> these are the credits i have accumulated so far</p>
-                <p> i have acquired 37 credits out of the 113 required for my program</p>
+              <div className={stylesEducation.hiddenOne}>
+                <div className={stylesMain.textList}>
+                  <p style={{color: "#339989", fontFamily:"consolas"}}>01.{"\u00a0"}</p>
+                  <p> these are the credits i have accumulated so far</p>
+                </div>
+                <div className={stylesMain.textList}>
+                  <p style={{color: "#339989", fontFamily:"consolas"}}>02.{"\u00a0"}</p>
+                  <p> i have acquired 37 credits out of the 113 required for my program</p>
+                </div>
               </div>
-              <div>
-                <p> these are the credits i will have accumulated as of may 2024</p>
-                <p> i will have acquired 62 credits out of the 113 required for my program</p>
+              <div className={stylesEducation.hiddenTwo}>
+                <div className={stylesMain.textList}>
+                  <p style={{color: "#3db8a5", fontFamily:"consolas"}}>01.{"\u00a0"}</p>
+                  <p> these are the credits i will have accumulated as of may 2024</p>
+                </div>
+                <div className={stylesMain.textList}>
+                  <p style={{color: "#3db8a5", fontFamily:"consolas"}}>02.{"\u00a0"}</p>
+                  <p> i will have acquired 62 credits out of the 113 required for my program</p>
+                </div>
               </div>
             </div>
           </div>

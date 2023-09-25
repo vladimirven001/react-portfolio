@@ -38,12 +38,16 @@
   display: none;
   justify-content: center;
   align-items: center;
+  padding-right: 3vw;
+  transition: display 0.5s;
 }
 
 .hiddenTwo {
   display: none;
   justify-content: center;
   align-items: center;
+  padding-left: 3vw;
+  transition: display 0.5s;
 }
 
 .main{
@@ -72,12 +76,20 @@
   z-index: 9999;
 }
 
+.first:hover > .hiddenOne {
+  display: block;
+}
+
 .second{
   height: 2.5vw;
   width: calc(62/113*100%);
   border-radius: 1vh;
   position: absolute;
   background-color: #3db8a5;
+}
+
+.second:hover > .hiddenTwo {
+  display: block;
 }
 
 .bottomContainer {
@@ -89,3 +101,6 @@
   position: relative;
   box-sizing: inherit;
 }
+
+
+
