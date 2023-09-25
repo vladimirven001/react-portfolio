@@ -13,7 +13,7 @@ const contact = () => {
           <div className={stylesContact.textTitle}>
             <h1 style={{fontWeight:"normal"}}>contact</h1>
           </div>
-          <ContactForm />
+          
           <Footer />
         </div>
       </div>

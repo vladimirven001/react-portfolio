@@ -38,7 +38,7 @@ const skills = () => {
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"  />
                 </div>
                 <div className={stylesHoneycomb.item}>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"  />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"  />
                 </div>
               </div>
 
