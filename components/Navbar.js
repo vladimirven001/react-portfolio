@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import NavItem from "./NavItem";
  // this a navbar taken from 
 const menu_list = [
-  { text: "experience", href: "/experience" },
-  { text: "education", href: "/education" },
+  { text: "projects", href: "/projects" },
+  // { text: "experience", href: "/experience" },
+  // { text: "education", href: "/education" },
   { text: "skills", href: "/skills" },
   { text: "contact", href: "/contact" },
 ];

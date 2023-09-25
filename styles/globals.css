@@ -85,7 +85,7 @@ nav{
     flex-direction: row;
     min-height: fit-content;
     width: fit-content;
-    column-gap: 24px;
+    column-gap: 100px;
     align-items: center;
   }
   .nav__link::before{

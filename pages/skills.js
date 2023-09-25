@@ -11,7 +11,7 @@ const skills = () => {
         <div className={stylesMain.principal}>
               
           <div className={stylesSkills.textTitle}>
-            <h1 style={{fontWeight:"normal"}}>Skills</h1>
+            <h1 style={{fontWeight:"normal"}}>skills</h1>
           </div>
           <div>
             <div className={stylesHoneycomb.honey}>

@@ -10,10 +10,12 @@ const education = () => {
       <div className={stylesMain.container}>
         <div className={stylesMain.principal}>
           <div className={stylesEducation.textTitle}>
-            <h1 style={{fontWeight:"normal"}}>Education</h1>
+            <h1 style={{fontWeight:"normal"}}>education</h1>
           </div>
 
-          <ProgressBar />
+          <div>
+            <ProgressBar />
+          </div>
           
           <Footer />
         </div>

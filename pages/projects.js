@@ -1,8 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer'
 import stylesMain from '../styles/Home.module.css'
-import stylesContact from '../styles/Contact.module.css';
-import ContactForm from '../components/ContactForm'
+import stylesExperience from '../styles/Contact.module.css';
 
 
 const contact = () => {
@@ -10,10 +9,10 @@ const contact = () => {
     <>
       <div className={stylesMain.container}>
         <div className={stylesMain.principal}>
-          <div className={stylesContact.textTitle}>
-            <h1 style={{fontWeight:"normal"}}>contact</h1>
+          <div className={stylesExperience.textTitle}>
+            <h1 style={{fontWeight:"normal"}}>projects</h1>
           </div>
-          <ContactForm />
+
           <Footer />
         </div>
       </div>

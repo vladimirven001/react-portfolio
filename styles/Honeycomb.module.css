@@ -1,6 +1,6 @@
 .item {
-    width: 190px;
-    height: 219.393095px;
+    width: 15vh;
+    height: 17.3205075vh;
     background-color:   #dedede;
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
     display: flex;
@@ -11,28 +11,28 @@
     margin:auto;
 }
 .honey img{
-    height:140px;
+    height: 11vh;
 }
 .row_1{
     display: grid;
     justify-content: center;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 16.5vh 16.5vh 16.5vh 16.5vh;
 }
 .row_2{
     display: grid;
     justify-content: center;
-    grid-template-columns   : 200px 200px 200px 200px 200px;
-    margin: -45px 0 0 0px;
+    grid-template-columns   : 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh;
+    margin: calc(1.3vh - 15vh*0.2885) 0 0 0px;
 }
 .row_3{
     display: grid;
     justify-content: center;
-    grid-template-columns: 200px 200px 200px 200px;  
-    margin: -45px 0 0 0px;
+    grid-template-columns: 16.5vh 16.5vh 16.5vh 16.5vh;  
+    margin: calc(1.3vh - 15vh*0.2885) 0 0 0px;
 }
 .row_4{
     display: grid;
     justify-content: center;
-    grid-template-columns: 200px 200px 200px;
-    margin: -45px 0 0 0px;
+    grid-template-columns: 16.5vh 16.5vh 16.5vh;
+    margin: calc(1.3vh - 15vh*0.2885) 0 0 0px;
 }

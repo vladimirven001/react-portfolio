@@ -7,28 +7,26 @@
 .progressbar{
 	width: 60vh;
 	height: 5vh;
-    border-radius: 5px;
+    border-radius: 1vh;
+    padding: 0.5vh;
 	background-color: #eee;
     position: relative;
 }
 
 .first{
-    height: 100%;
-    width: 50%;
-    border-radius: 5px;
+    height: 4vh;
+    width: calc(16/141*100%);
+    border-radius: 1vh;
     position: absolute;
-    margin-left: -1%;
-    background-color: brown;
+    background-color: #339989;
     z-index: 9999;
 }
 
 .second{
-    height: 100%;
-    width: 69%;
-    margin-left: 10%;
-    border-radius: 5px;
+    height: 4vh;
+    width: calc(40/141*100%);
+    border-radius: 1vh;
     position: absolute;
-    background-color: aqua;
-	height: 100%;
+    background-color: #3db8a5;
 }
 
