@@ -1,5 +1,3 @@
-https://anniebombanie.com/#work
-	skills section
 	work/experience section
 		include screenshots of the tabs of NIM GAME and projects from COMP 208
 
@@ -10,3 +8,10 @@ education section
 		Software 25%
 		high school and CEGEP 100%
 		
+
+projects section
+	big box with arrows to move between
+	title of project
+	screenshot
+	description
+	github repo
