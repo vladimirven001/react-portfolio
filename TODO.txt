@@ -1,0 +1,7 @@
+finish hover animation of react portfolio
+
+finish styling of boxes that appear on hover
+
+add % of completeness on hover inside progress bar
+
+PROJECTS TAB

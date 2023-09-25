@@ -8,7 +8,7 @@ export default function p()
             
             <div>vladimir venkov</div> 
             <div>(514) 963-4544 </div>  
-            <div>vladimir.venkov@mail.mcgill.ca</div>
+            <div>vladimirven001@gmail.com</div>
             
         </div>
 

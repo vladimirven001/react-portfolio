@@ -4,7 +4,7 @@ import stylesMain from '../styles/Home.module.css'
 import stylesExperience from '../styles/Contact.module.css';
 
 
-const contact = () => {
+const experience = () => {
   return (
     <>
       <div className={stylesMain.container}>
@@ -20,4 +20,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default experience;

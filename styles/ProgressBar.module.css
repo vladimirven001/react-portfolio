@@ -5,17 +5,19 @@
 }
 
 .progressbar{
-	width: 60vh;
-	height: 5vh;
+	width: 45vw;
+	height: 3vw;
     border-radius: 1vh;
     padding: 0.5vh;
 	background-color: #eee;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .first{
-    height: 4vh;
-    width: calc(16/141*100%);
+    height: 2.5vw;
+    width: calc(37/113*100%);
     border-radius: 1vh;
     position: absolute;
     background-color: #339989;
@@ -23,10 +25,9 @@
 }
 
 .second{
-    height: 4vh;
-    width: calc(40/141*100%);
+    height: 2.5vw;
+    width: calc(62/113*100%);
     border-radius: 1vh;
     position: absolute;
     background-color: #3db8a5;
 }
-

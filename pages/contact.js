@@ -1,8 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer'
 import stylesMain from '../styles/Home.module.css'
-import stylesContact from '../styles/Contact.module.css';
-import ContactForm from '../components/ContactForm'
+import stylesContact from '../styles/Contact.module.css'
 
 
 const contact = () => {
@@ -13,7 +12,6 @@ const contact = () => {
           <div className={stylesContact.textTitle}>
             <h1 style={{fontWeight:"normal"}}>contact</h1>
           </div>
-          
           <Footer />
         </div>
       </div>

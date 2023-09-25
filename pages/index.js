@@ -19,18 +19,18 @@ export default function Home() {
           </div>
           <div className={styles.textList} style={{paddingTop: "15vh"}}>
             <p style={{color: "#3DB8A5", fontFamily:"consolas"}}>01.{"\u00a0"}</p>
-            <p>experienced in salesmanship, leadership, and more{"\u00a0"}</p>
-            <a href="/experience" className={styles.textLink}>{"<"}learn more{">"}</a>
+            <p>many projects in relation with software engineering{"\u00a0"}</p>
+            <a href="/projects" className={styles.textLink}>{"<"}learn more{" />"}</a>
           </div>
           <div className={styles.textList}>
             <p style={{color: "#3DB8A5", fontFamily:"consolas"}}>02.{"\u00a0"}</p>
-            <p>currently in the first year of a four year program of co-op software engineering{"\u00a0"}</p>
-            <a href="/education" className={styles.textLink}>{"<"}learn more{">"}</a>
+            <p>currently in the second year of a four year co-op program{"\u00a0"}</p>
+            <a href="/education" className={styles.textLink}>{"<"}learn more{" />"}</a>
           </div>
           <div className={styles.textList}>
             <p style={{color: "#3DB8A5", fontFamily:"consolas"}}>03.{"\u00a0"}</p>
-            <p>good knowledge in python, c#, html, css and more{"\u00a0"}</p>
-            <a href="/skills" className={styles.textLink}>{"<"}learn more{">"}</a>
+            <p>good knowledge in python, java, html, css and more{"\u00a0"}</p>
+            <a href="/skills" className={styles.textLink}>{"<"}learn more{" />"}</a>
           </div>
 
           <Footer />

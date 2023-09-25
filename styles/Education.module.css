@@ -8,9 +8,84 @@
   }
   
 .textSubtitle {
-    font-size: max(1.8vh, 15px);
+    font-size: max(2vh, 21px);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #3DB8A5;
+    padding-bottom: 3vh;
   }
+
+.container {
+  height: calc(100% - 10vh - 18px - (10vh + 18px + 4px));
+  padding-bottom: calc(10vh + 18px + 4px);
+  width: 100%;
+  position: fixed;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.progressBarWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh;
+}
+
+.hiddenOne {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiddenTwo {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressbar{
+  width: 45vw;
+  height: 3vw;
+  border-radius: 1vh;
+  padding: 0.5vh;
+  background-color: #eee;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.first{
+  height: 2.5vw;
+  width: calc(37/113*100%);
+  border-radius: 1vh;
+  position: absolute;
+  background-color: #339989;
+  z-index: 9999;
+}
+
+.second{
+  height: 2.5vw;
+  width: calc(62/113*100%);
+  border-radius: 1vh;
+  position: absolute;
+  background-color: #3db8a5;
+}
+
+.bottomContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3vh;
+  margin: 0;
+  position: relative;
+  box-sizing: inherit;
+}

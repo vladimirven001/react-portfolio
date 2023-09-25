@@ -1,13 +1,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import NavItem from "./NavItem";
- // this a navbar taken from 
 const menu_list = [
   { text: "projects", href: "/projects" },
   // { text: "experience", href: "/experience" },
-  // { text: "education", href: "/education" },
+  { text: "education", href: "/education" },
   { text: "skills", href: "/skills" },
-  { text: "contact", href: "/contact" },
+  // { text: "contact", href: "/contact" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);

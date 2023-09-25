@@ -15,8 +15,8 @@
     
     font-size: 18px;
     color: #dedede;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: max(1px, 5vh);
+    margin-bottom: max(1px, 5vh);
     background: #131515;
     justify-content: center;
     display: flex;
