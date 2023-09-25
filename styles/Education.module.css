@@ -35,7 +35,7 @@
 }
 
 .hiddenOne {
-  display: none;
+  /* display: none; */
   justify-content: center;
   align-items: center;
   padding-right: 3vw;
@@ -43,7 +43,7 @@
 }
 
 .hiddenTwo {
-  display: none;
+  /* display: none; */
   justify-content: center;
   align-items: center;
   padding-left: 3vw;
@@ -102,5 +102,61 @@
   box-sizing: inherit;
 }
 
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #339989;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s;
+}
 
+.cardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
+.cardText {
+  font-size: 24px;
+  margin: 0;
+}
+
+.hoverContent {
+  display: none;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:hover .hoverContent {
+  display: block;
+}
+
+.card:hover .preCardTextSubtitle {
+  display: none;
+}
+
+.cardTextSubtitle {
+  font-size: max(2vh, 21px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1vh;
+  color: #131515; 
+}
+
+.preCardTextSubtitle {
+  font-size: max(3vh, 25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
