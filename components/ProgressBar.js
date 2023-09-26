@@ -6,12 +6,9 @@ export default function Progressbar() {
 	  <div className={styles.main}>
 		  <div className={styles.progressbar}>
 			  <div className={styles.first}>
-
         </div>
         <div className={styles.second}>
-
         </div>
-          
       </div>
 		</div>
   )

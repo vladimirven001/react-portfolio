@@ -20,59 +20,48 @@ const education = () => {
               <div className={stylesEducation.main}>
                 <div className={stylesEducation.progressbar}>
                   <div className={stylesEducation.first}>
+                    <p className={stylesEducation.preCardTextSubtitle}>33%</p>
                   </div>
                   <div className={stylesEducation.second}>
+                    <p className={stylesEducation.preCardTextSubtitle}>55%</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className={stylesEducation.bottomContainer}>
-              {/* <div className={stylesEducation.hiddenOne}>
-                <div className={stylesMain.textList}>
-                  <p style={{color: "#339989", fontFamily:"consolas"}}>01.{"\u00a0"}</p>
-                  <p> these are the credits i have accumulated so far</p>
-                </div>
-                <div className={stylesMain.textList}>
-                  <p style={{color: "#339989", fontFamily:"consolas"}}>02.{"\u00a0"}</p>
-                  <p> i have acquired 37 credits out of the 113 required for my program</p>
-                </div>
-              </div> */}
-              <div class="card">
-                <div class="card-content">
-                    <p class="card-text">Cat</p>
-                    <div class="hover-content">
-                        <h2>Cat</h2>
-                        <p>A cat is a small domesticated carnivorous mammal. It is known for its agility, playfulness, and often its affection towards humans.</p>
+              <div className={stylesEducation.firstCard}>
+                <div className={stylesEducation.cardContent}>
+                    <p className={stylesEducation.preCardTextSubtitle}>09/2023</p>
+                    <div className={stylesEducation.hoverContent}>
+                      <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>09/2023</p>
+                      <div className={stylesMain.textList}>
+                        <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>01.{"\u00a0"}</p>
+                        <p style={{color: "#dedede"}}> these are the credits i have accumulated as of now</p>
+                      </div>
+                      <div className={stylesMain.textList}>
+                        <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>02.{"\u00a0"}</p>
+                        <p style={{color: "#dedede"}}> i have acquired 37 credits out of the 113 required for my program</p>
+                      </div>
                     </div>
                 </div>
               </div>
-              <div className={stylesEducation.card}>
+              <div style={{width:"10vw"}}></div>
+              <div className={stylesEducation.secondCard}>
                 <div className={stylesEducation.cardContent}>
                     <p className={stylesEducation.preCardTextSubtitle}>05/2024</p>
-                    <p className={stylesEducation.preCardTextSubtitle}>55%</p>
                     <div className={stylesEducation.hoverContent}>
                       <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>05/2024</p>
                       <div className={stylesMain.textList}>
-                        <p style={{color: "#131515", fontFamily:"consolas"}}>01.{"\u00a0"}</p>
-                        <p style={{color: "#131515"}}> these are the credits i will have accumulated as of may 2024</p>
+                        <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>01.{"\u00a0"}</p>
+                        <p style={{color: "#dedede"}}> these are the credits i will have accumulated as of may 2024</p>
                       </div>
                       <div className={stylesMain.textList}>
-                        <p style={{color: "#131515", fontFamily:"consolas"}}>02.{"\u00a0"}</p>
-                        <p style={{color: "#131515"}}> i will have acquired 62 credits out of the 113 required for my program</p>
+                        <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>02.{"\u00a0"}</p>
+                        <p style={{color: "#dedede"}}> i will have acquired 62 out of the 113 required credits</p>
                       </div>
                     </div>
                 </div>
               </div>
-              {/* <div className={stylesEducation.hiddenTwo}>
-                <div className={stylesMain.textList}>
-                  <p style={{color: "#3db8a5", fontFamily:"consolas"}}>01.{"\u00a0"}</p>
-                  <p> these are the credits i will have accumulated as of may 2024</p>
-                </div>
-                <div className={stylesMain.textList}>
-                  <p style={{color: "#3db8a5", fontFamily:"consolas"}}>02.{"\u00a0"}</p>
-                  <p> i will have acquired 62 credits out of the 113 required for my program</p>
-                </div>
-              </div> */}
             </div>
           </div>
           

@@ -34,22 +34,6 @@
   padding: 3vh;
 }
 
-.hiddenOne {
-  /* display: none; */
-  justify-content: center;
-  align-items: center;
-  padding-right: 3vw;
-  transition: display 0.5s;
-}
-
-.hiddenTwo {
-  /* display: none; */
-  justify-content: center;
-  align-items: center;
-  padding-left: 3vw;
-  transition: display 0.5s;
-}
-
 .main{
   display: flex;
   justify-content: center;
@@ -74,10 +58,9 @@
   position: absolute;
   background-color: #339989;
   z-index: 9999;
-}
-
-.first:hover > .hiddenOne {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .second{
@@ -86,10 +69,10 @@
   border-radius: 1vh;
   position: absolute;
   background-color: #3db8a5;
-}
-
-.second:hover > .hiddenTwo {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: calc(37/113*100%);
 }
 
 .bottomContainer {
@@ -102,13 +85,24 @@
   box-sizing: inherit;
 }
 
-.card {
-  width: 300px;
-  height: 200px;
+.firstCard {
+  width: 33vh;
+  height: 22vh;
   background-color: #339989;
-  border-radius: 10px;
+  border-radius: 1vh;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.secondCard {
+  width: 33vh;
+  height: 22vh;
+  background-color: #3db8a5;
+  border-radius: 1vh;
+  overflow: hidden;
+  box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
   position: relative;
   transition: transform 0.3s;
 }
@@ -132,15 +126,27 @@
   text-align: center;
 }
 
-.card:hover {
+.firstCard:hover {
   transform: scale(1.05);
 }
 
-.card:hover .hoverContent {
+.secondCard:hover {
+  transform: scale(1.05);
+}
+
+.firstCard:hover .hoverContent {
   display: block;
 }
 
-.card:hover .preCardTextSubtitle {
+.firstCard:hover .preCardTextSubtitle {
+  display: none;
+}
+
+.secondCard:hover .hoverContent {
+  display: block;
+}
+
+.secondCard:hover .preCardTextSubtitle {
   display: none;
 }
 
@@ -150,7 +156,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 1vh;
-  color: #131515; 
+  color: #dedede; 
 }
 
 .preCardTextSubtitle {
