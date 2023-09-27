@@ -1,38 +1,42 @@
 .item {
-    width: 15vh;
-    height: 17.3205075vh;
+    width: 7vw;
+    height: 8vw;
     background-color:   #dedede;
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s;
 }
 .honey{
     margin:auto;
 }
 .honey img{
-    height: 11vh;
+    height: 5vw;
 }
 .row_1{
     display: grid;
     justify-content: center;
-    grid-template-columns: 16.5vh 16.5vh 16.5vh 16.5vh;
+    grid-template-columns: 8vw 8vw 8vw 8vw;
 }
 .row_2{
     display: grid;
     justify-content: center;
-    grid-template-columns   : 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh;
-    margin: calc(1.3vh - 15vh*0.2885) 0 0 0px;
+    grid-template-columns   : 8vw 8vw 8vw 8vw 8vw;
+    margin: calc(0.6303vw - 7.2727vw*0.2885) 0 0 0px;
 }
 .row_3{
     display: grid;
     justify-content: center;
-    grid-template-columns: 16.5vh 16.5vh 16.5vh 16.5vh;  
-    margin: calc(1.3vh - 15vh*0.2885) 0 0 0px;
+    grid-template-columns: 8vw 8vw 8vw 8vw;  
+    margin: calc(0.6303vw - 7.2727vw*0.2885) 0 0 0px;
 }
 .row_4{
     display: grid;
     justify-content: center;
-    grid-template-columns: 16.5vh 16.5vh 16.5vh;
-    margin: calc(1.3vh - 15vh*0.2885) 0 0 0px;
+    grid-template-columns: 8vw 8vw 8vw;
+    margin: calc(0.6303vw - 7.2727vw*0.2885) 0 0 0px;
+}
+.item:hover {
+  transform: scale(1.05);
 }
