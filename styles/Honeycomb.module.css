@@ -34,7 +34,7 @@
 .row_4{
     display: grid;
     justify-content: center;
-    grid-template-columns: 8vw 8vw 8vw;
+    grid-template-columns: 8vw 8vw 8vw 8vw 8vw;
     margin: calc(0.6303vw - 7.2727vw*0.2885) 0 0 0px;
 }
 .item:hover {

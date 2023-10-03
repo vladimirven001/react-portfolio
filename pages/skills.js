@@ -60,6 +60,16 @@ const skills = () => {
                 <div className={stylesHoneycomb.item}>
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"  />
                 </div>
+                <div className={stylesHoneycomb.item}>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+                </div>
+                <div className={stylesHoneycomb.item}>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
+                </div>
+                <div className={stylesHoneycomb.item}>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-plain.svg" />
+                </div>
+
               </div>
             </div>
           </div>
