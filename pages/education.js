@@ -33,7 +33,7 @@ const education = () => {
                 <div className={stylesEducation.cardContent}>
                     <p className={stylesEducation.preCardTextSubtitle}>10/2023</p>
                     <div className={stylesEducation.hoverContent}>
-                      <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>09/2023</p>
+                      <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>10/2023</p>
                       <div className={stylesEducation.textList}>
                         <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>01.{"\u00a0"}</p>
                         <p style={{color: "#dedede"}}> these are the credits i have accumulated as of now</p>

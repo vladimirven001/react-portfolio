@@ -12,5 +12,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #3DB8A5;
+    color: #dedede;
+  }
+
+  .container {
+    padding-bottom: calc(10vh + 18px + 4px);
+    width: 100%;
+    position: fixed;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+
+  .project {
+    padding: 2vw;
+    background-color: #339989;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+    margin-top: 6vh;
   }
