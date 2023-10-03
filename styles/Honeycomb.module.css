@@ -1,6 +1,6 @@
 .item {
     width: 7vw;
-    height: 8vw;
+    height: 8.2vw;
     background-color:   #dedede;
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
     display: flex;
