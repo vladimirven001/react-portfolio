@@ -151,7 +151,7 @@
 }
 
 .cardTextSubtitle {
-  font-size: max(1vw, 16px);
+  font-size: max(2vh, 16px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +160,7 @@
 }
  
 .preCardTextSubtitle {
-  font-size: max(1vw, 25px);
+  font-size: max(3vh, 12px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,7 +169,7 @@
 
 .textList {
   margin-top: 0.1vh;
-  font-size: max(0.65vw, 13px);
+  font-size: max(1.7vh, 12px);
   text-align: center;
   color: #dedede;
 }

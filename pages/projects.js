@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer'
 import stylesMain from '../styles/Home.module.css'
 import stylesProjects from '../styles/Projects.module.css'
+import '../public/thisWebsite.png'
 
 const projects = () => {
   return (
@@ -13,11 +14,61 @@ const projects = () => {
           </div>
           <div className={stylesProjects.container}>
             <div className={stylesProjects.project}>
-              <p>WatchMatch (work in progress...)</p>
-              <p>WatchMatch is a Website that recommends you watches based on your preferences, that also fit your budget</p>
+              <div className={stylesProjects.projectTitle}>
+                <p>WatchMatch (work in progress...)</p>
+              </div>
+              <div className={stylesProjects.elementsContainer}>
+                <div className={stylesProjects.textContainer}>
+                  <p style={{fontWeight:"bold"}}>What is is:</p>
+                  <p>{"\u003e"} WatchMatch is a website that recommends alternatives to watches that fit your preferences, so that they can also fit your budget</p>
+                  <p>{"\u00a0"}</p>
+                  <p style={{fontWeight:"bold"}}>How it works:</p>
+                  <p>{"\u003e"} WatchMatch calculates the similarity coefficient between the given watch and every watch in a database of over 36,000 watches</p>
+                  <p>{"\u00a0"}</p>
+                  <p style={{fontWeight:"bold"}}>How it's built:</p>
+                  <p>{"\u003e"} The backend is coded in Python and uses components of sklearn in order to calculate the similarity between the watches</p>
+                  <div>
+                    <p>Links:</p>
+                  </div>
+                </div>
+                <div className={stylesProjects.imageContainer}>
+                  
+                </div>
+              </div>              
             </div>
             <div className={stylesProjects.project}>
-              This is the second project
+              <div className={stylesProjects.projectTitle}>
+                <p>This website</p>
+              </div>
+              <div className={stylesProjects.elementsContainer}>
+                <div className={stylesProjects.imageContainer}>
+                  <img src='https://uc4f36bd163a51f00ce21da873a6.previews.dropboxusercontent.com/p/thumb/ACEYV3CmKUgCQlGeZ22M21tqxPS81BgtD9AGCBaziN3-MEjVlXxMpg4DvZHdhiwQCYU9tdz15qe5A8ApY_2TFb7Ph-0U2X1XfmodMxdFBQf-bxccpQaZ1jnCRuF3qhTNKCb3NkidURuYPHdl173aTQLWlXHBX_hMHEgGedlDUHTDID_wnF9i9VnbPUtOpX_llDHaqNP6sucMpyUS9m2W4moYId80PevavVfI8zSBgtjVtbDmYLyW4vA1-BYqkDJ5ltP8IHkFnkVQzvf_rg_I11xcDK-FlitWE5JAlYjIYWqy-uM-09qcKDAeJ5JZTBxF8iUvoF-naRYPjkuDW2VGQBkyQLxa986YxZRbV62RWj1o2vqqN1vyiWoNBwync-0414Y/p.png'></img>
+                </div>
+                <div className={stylesProjects.textContainer}>
+                  <p style={{fontWeight:"bold"}}>What is is:</p>
+                  <p>{"\u003e"} This Website is my Portfolio, used to present my project, my education, and my skills</p>
+                  <p>{"\u00a0"}</p>
+                  <p style={{fontWeight:"bold"}}>How it's built:</p>
+                  <p>{"\u003e"} This website uses Next.js and React in order to create interactive components and integrate them into dynamic web pages</p>
+                </div>
+              </div> 
+            </div>
+            <div className={stylesProjects.project}>
+              <div className={stylesProjects.projectTitle}>
+                <p>Nim and Marienbad Game</p>
+              </div>
+              <div className={stylesProjects.elementsContainer}>
+                <div className={stylesProjects.textContainer}>
+                  <p style={{fontWeight:"bold"}}>What is is:</p>
+                  <p>{"\u003e"} This Website is my Portfolio, used to present my project, my education, and my skills</p>
+                  <p>{"\u00a0"}</p>
+                  <p style={{fontWeight:"bold"}}>How it's built:</p>
+                  <p>{"\u003e"} This website uses Next.js and React in order to create interactive components and integrate them into dynamic web pages</p>
+                </div>
+                <div className={stylesProjects.imageContainer}>
+                  <img src='https://previews.dropbox.com/p/thumb/ACFJHsbCKCZXEKBQ-CtIe_eUPJhytS7pFcrn-9blMJvakxUHACdo25rp1e9C0732ey14jRT2P5hS3QhieiG_exZ2u0m8ZrzuxErzz9M2CUff5uDORCoNY1N2Ae8G6lf80ZWe6ka8vlkGWa9bAXw-g1vhwAqr_Gl7aDpOONlBsS3vR0w70SxlzzoulF5abcZu8TdENDYYIjTs-Sc5-99KkrRzxckbRsY9GkPF9afYf14UOeSM9MUg1uMwfTvO3p_88J3ZHk-f6n-7vzDxg2ivz5QZ3yqjBWD6bIELPhGtwyflUsqO8zSucPPY6wNxFHM_XCbTuPUzVrOLZuqTCm5LAU5O/p.png'></img>
+                </div>
+              </div> 
             </div>
           </div>
           <Footer />

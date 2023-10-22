@@ -2,7 +2,7 @@
   height: calc(100% - 10vh - 18px);
   width: 100%;
   position: fixed;
-  overflow-y: auto;
+  overflow: auto;
 } 
 
 .principal {
@@ -12,6 +12,7 @@
     position: relative;
     padding-bottom: calc(10vh + 18px + 4px);
     box-sizing: inherit;
+    overflow: auto;
 }
 
 .textTitle {
