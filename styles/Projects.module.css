@@ -28,7 +28,7 @@
     border-radius: 1vh;
     margin-top: 6vh;
     width: 140vh;
-    height: 55vh;
+    height: auto;
   }
 
   .projectTitle {
