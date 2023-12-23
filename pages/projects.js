@@ -25,7 +25,7 @@ const projects = () => {
                   <p style={{fontWeight:"bold"}}>How it works:</p>
                   <p>{"\u003e"} WatchMatch calculates the similarity coefficient between the given watch and every watch in a database of over 36,000 watches.</p>
                   <p>{"\u00a0"}</p>
-                  <p style={{fontWeight:"bold"}}>How it's built:</p>
+                  <p style={{fontWeight:"bold"}}>How it{"\u0027"}s built:</p>
                   <p>{"\u003e"} The backend is coded in Python and uses components of sklearn in order to calculate the similarity between the watches.</p>
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>Github:</p>
@@ -50,7 +50,7 @@ const projects = () => {
                   <p style={{fontWeight:"bold"}}>What is is:</p>
                   <p>{"\u003e"} This Website is my Portfolio. I use it to present the projects i've worked on, the skills i've learned, and more information about me.</p>
                   <p>{"\u00a0"}</p>
-                  <p style={{fontWeight:"bold"}}>How it's built:</p>
+                  <p style={{fontWeight:"bold"}}>How it{"\u0027"}s built:</p>
                   <p>{"\u003e"} This website uses Next.js and React in order to create an interactive and dynamic web environment.</p>
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>Github:</p>
@@ -72,7 +72,7 @@ const projects = () => {
                   <p style={{fontWeight:"bold"}}>How it works:</p>
                   <p>{"\u003e"} NimGame computes the mathematically right move for each position by converting the amount of matches to binary and deciding whether it should start with the first move.</p>
                   <p>{"\u00a0"}</p>
-                  <p style={{fontWeight:"bold"}}>How it's built:</p>
+                  <p style={{fontWeight:"bold"}}>How it{"\u0027"}s built:</p>
                   <p>{"\u003e"} This application is built in C# with .NET 7.0</p>
                   <p>{"\u003e"} The mathematics behind it are based on the book <a href='https://annarchive.com/files/Winning%20Ways%20for%20Your%20Mathematical%20Plays%20V1.pdf' className={stylesMain.textLink}>Winning Ways for Your Mathematical Plays</a>, by Elwyn R. Berlekamp</p>
                   <p>{"\u00a0"}</p>
