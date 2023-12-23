@@ -44,7 +44,7 @@ const projects = () => {
               </div>
               <div className={stylesProjects.elementsContainer}>
                 <div className={stylesProjects.imageContainer}>
-                  <img src='NimGame.png'></img>
+                  <img src='thisWebsite.png'></img>
                 </div>
                 <div className={stylesProjects.textContainer}>
                   <p style={{fontWeight:"bold"}}>What is is:</p>
@@ -82,7 +82,7 @@ const projects = () => {
                   </a>
                 </div>
                 <div className={stylesProjects.imageContainer}>
-                  <img src='thisWebsite.png'></img>
+                  <img src='NimGame.png'></img>
                 </div>
               </div> 
             </div>

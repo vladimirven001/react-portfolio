@@ -142,11 +142,19 @@
   display: none;
 }
 
+.firstCard:hover .preCardText {
+  display: none;
+}
+
 .secondCard:hover .hoverContent {
   display: block;
 }
 
 .secondCard:hover .preCardTextSubtitle {
+  display: none;
+}
+
+.secondCard:hover .preCardText {
   display: none;
 }
 
