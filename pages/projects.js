@@ -48,7 +48,7 @@ const projects = () => {
                 </div>
                 <div className={stylesProjects.textContainer}>
                   <p style={{fontWeight:"bold"}}>What is is:</p>
-                  <p>{"\u003e"} This Website is my Portfolio. I use it to present the projects i've worked on, the skills i've learned, and more information about me.</p>
+                  <p>{"\u003e"} This Website is my Portfolio. I use it to present the projects i{"\u0027"}ve worked on, the skills i{"\u0027"}ve learned, and more information about me.</p>
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>How it{"\u0027"}s built:</p>
                   <p>{"\u003e"} This website uses Next.js and React in order to create an interactive and dynamic web environment.</p>
@@ -67,7 +67,7 @@ const projects = () => {
               <div className={stylesProjects.elementsContainer}>
                 <div className={stylesProjects.textContainer}>
                   <p style={{fontWeight:"bold"}}>What is is:</p>
-                  <p>{"\u003e"} NimGame is a simple mathematical game which uses matches in which you play against the computer, your goal is to win, and the computer's goal is to cheat and win, so you can guess the outcome...</p>
+                  <p>{"\u003e"} NimGame is a simple mathematical game which uses matches in which you play against the computer, your goal is to win, and the computer{"\u0027"}s goal is to cheat and win, so you can guess the outcome...</p>
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>How it works:</p>
                   <p>{"\u003e"} NimGame computes the mathematically right move for each position by converting the amount of matches to binary and deciding whether it should start with the first move.</p>
