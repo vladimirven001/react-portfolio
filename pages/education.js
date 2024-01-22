@@ -32,6 +32,7 @@ const education = () => {
               <div className={stylesEducation.firstCard}>
                 <div className={stylesEducation.cardContent}>
                     <p className={stylesEducation.preCardTextSubtitle}>01/2024</p>
+                    <p className={stylesEducation.preCardText}>hover me</p>
                     <div className={stylesEducation.hoverContent}>
                       <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>01/2024</p>
                       <div className={stylesEducation.textList}>
@@ -49,6 +50,7 @@ const education = () => {
               <div className={stylesEducation.secondCard}>
                 <div className={stylesEducation.cardContent}>
                     <p className={stylesEducation.preCardTextSubtitle}>05/2024</p>
+                    <p className={stylesEducation.preCardText}>hover me</p>
                     <div className={stylesEducation.hoverContent}>
                       <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>05/2024</p>
                       <div className={stylesEducation.textList}>
