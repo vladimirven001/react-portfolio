@@ -20,10 +20,10 @@ const education = () => {
               <div className={stylesEducation.main}>
                 <div className={stylesEducation.progressbar}>
                   <div className={stylesEducation.first}>
-                    <p className={stylesEducation.preCardTextSubtitle}>33%</p>
+                    <p className={stylesEducation.preCardTextSubtitle}>46%</p>
                   </div>
                   <div className={stylesEducation.second}>
-                    <p className={stylesEducation.preCardTextSubtitle}>55%</p>
+                    <p className={stylesEducation.preCardTextSubtitle}>57%</p>
                   </div>
                 </div>
               </div>
@@ -31,17 +31,17 @@ const education = () => {
             <div className={stylesEducation.bottomContainer}>
               <div className={stylesEducation.firstCard}>
                 <div className={stylesEducation.cardContent}>
-                    <p className={stylesEducation.preCardTextSubtitle}>12/2023</p>
+                    <p className={stylesEducation.preCardTextSubtitle}>01/2024</p>
                     <p className={stylesEducation.preCardText}>hover me</p>
                     <div className={stylesEducation.hoverContent}>
-                      <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>12/2023</p>
+                      <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>01/2024</p>
                       <div className={stylesEducation.textList}>
                         <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>01.{"\u00a0"}</p>
                         <p style={{color: "#dedede"}}> these are the credits i have accumulated as of now</p>
                       </div>
                       <div className={stylesEducation.textList}>
                         <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>02.{"\u00a0"}</p>
-                        <p style={{color: "#dedede"}}> i have acquired 37 credits out of the 113 required for my program</p>
+                        <p style={{color: "#dedede"}}> i have acquired 52 credits out of the 113 required for my program</p>
                       </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const education = () => {
                       </div>
                       <div className={stylesEducation.textList}>
                         <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>02.{"\u00a0"}</p>
-                        <p style={{color: "#dedede"}}> i will have acquired 62 out of the 113 required credits</p>
+                        <p style={{color: "#dedede"}}> i will have acquired 64 out of the 113 required credits</p>
                       </div>
                     </div>
                 </div>
