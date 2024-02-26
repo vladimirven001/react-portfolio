@@ -35,7 +35,7 @@ const education = () => {
                     <p className={stylesEducation.preCardText}>hover me</p>
                     <div className={stylesEducation.hoverContent}>
                       <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>01/2024</p>
-                      <div className={stylesEducation.textList}>
+                      <div className={stylesEducation.textList1}>
                         <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>01.{"\u00a0"}</p>
                         <p style={{color: "#dedede"}}> these are the credits i have accumulated as of now</p>
                       </div>
@@ -53,7 +53,7 @@ const education = () => {
                     <p className={stylesEducation.preCardText}>hover me</p>
                     <div className={stylesEducation.hoverContent}>
                       <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>05/2024</p>
-                      <div className={stylesEducation.textList}>
+                      <div className={stylesEducation.textList1}>
                         <p style={{color: "#dedede", fontFamily:"consolas", fontWeight:"bold"}}>01.{"\u00a0"}</p>
                         <p style={{color: "#dedede"}}> these are the credits i will have accumulated as of may 2024</p>
                       </div>

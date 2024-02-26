@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 3vh;
+    padding: 1rem;
   }
 
 .container {
@@ -31,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3vh;
+  padding: 1.5rem;
 }
 
 .main{
@@ -181,3 +182,105 @@
   text-align: center;
   color: #dedede;
 }
+
+@media (max-width: 768px) { 
+    .container {
+      height: auto;
+      width: 100%;
+      position: fixed;
+      overflow-y: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    } 
+    .progressbar {
+      width: 22rem;
+      height: 5rem;
+      border-radius: 1vh;
+      padding: 0.5vh;
+      background-color: #eee;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .progressBarWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+    }
+    .first{
+      height: 90%;
+      width: calc(52/113*100%);
+      border-radius: 1vh;
+      position: absolute;
+      background-color: #339989;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .second{
+      height: 90%;
+      width: calc(64/113*100%);
+      border-radius: 1vh;
+      position: absolute;
+      background-color: #3db8a5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: calc(52/113*100%);
+    }
+    .bottomContainer {
+      display: flex;
+      justify-content: space-between;
+      /* flex-wrap: wrap; */
+      align-items: center;
+      padding-top: 3vh;
+      margin: 0;
+      position: relative;
+      box-sizing: inherit;
+    }
+    .firstCard {
+      width: 11rem;
+      height: 9rem;
+      background-color: #339989;
+      border-radius: 1vh;
+      overflow: hidden;
+      box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
+      position: relative;
+      transition: transform 0.3s;
+      margin-left: 0.5rem;
+    }
+    .secondCard {
+      width: 11rem;
+      height: 9rem;
+      background-color: #3db8a5;
+      border-radius: 1vh;
+      overflow: hidden;
+      box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
+      position: relative;
+      transition: transform 0.3s;
+      margin-left: -2rem;
+    }
+    .cardTextSubtitle {
+      font-size: max(2vh, 16px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0.5vw;
+      color: #dedede; 
+    }
+    .preCardTextSubtitle {
+      font-size: max(3vh, 12px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+    .textList {
+      display: none;
+    }
+  }
