@@ -1,7 +1,7 @@
 .textTitle {
     padding-top: 5vh;
     font-weight: normal;
-    font-size: max(4.5vh, 36px) ;
+    font-size: min(3.5rem, 36px);
     display: flex;
     justify-content: center;
     align-items: center;

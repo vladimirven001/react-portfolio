@@ -23,3 +23,9 @@
     flex-grow: 1;
   }
 
+  @media (max-width: 768px) { 
+    /* Styles for screens smaller than 768px (adjust as needed) */
+    .eqi_container {
+      display: none; /* Hide the image container on smaller screens */
+    }
+  }

@@ -32,7 +32,7 @@ const skills = () => {
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"  />
                 </div>
                 <div className={stylesHoneycomb.item}>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"  />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg"  />
                 </div>
                 <div className={stylesHoneycomb.item}>
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"  />

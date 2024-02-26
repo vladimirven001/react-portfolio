@@ -1,7 +1,7 @@
 .textTitle {
     padding-top: 5vh;
     font-weight: normal;
-    font-size: max(4.5vh, 36px) ;
+    font-size: min(3.5rem, 36px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     flex-direction: column;
     border-radius: 1vh;
     margin-top: 6vh;
-    width: 140vh;
+    width: min(140vh, 90%);
     height: auto;
   }
 
@@ -49,7 +49,7 @@
   }
 
   .imageContainer img{
-    max-width: 60vh;
+    max-width: 100%;
     border-radius: 1vh;
   }
 
@@ -57,7 +57,7 @@
     font-weight: normal;
     color:#1E1E1E;
     /* color: #dedede; */
-    font-size: max(2vh, 12px) ;
+    font-size: max(1rem, 12px) ;
     max-width: 60vh;
   }
 
@@ -66,4 +66,9 @@
     margin-right: 1vw;
   }
 
-
+  @media (max-width: 768px) { 
+    /* Styles for screens smaller than 768px (adjust as needed) */
+    .imageContainer {
+      display: none; /* Hide the image container on smaller screens */
+    }
+  }
