@@ -19,7 +19,7 @@ const projects = () => {
               </div>
               <div className={stylesProjects.elementsContainer}>
                 <div className={stylesProjects.textContainer}>
-                  <p style={{fontWeight:"bold"}}>What is is:</p>
+                  <p style={{fontWeight:"bold"}}>What it is:</p>
                   <p>{"\u003e"} WatchMatch is a website that recommends alternatives to watches that fit your preferences, so that they can also fit your budget.</p>
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>How it works:</p>
@@ -47,7 +47,7 @@ const projects = () => {
                   <img src='thisWebsite.png'></img>
                 </div>
                 <div className={stylesProjects.textContainer}>
-                  <p style={{fontWeight:"bold"}}>What is is:</p>
+                  <p style={{fontWeight:"bold"}}>What it is:</p>
                   <p>{"\u003e"} This Website is my Portfolio. I use it to present the projects i{"\u0027"}ve worked on, the skills i{"\u0027"}ve learned, and more information about me.</p>
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>How it{"\u0027"}s built:</p>
@@ -66,7 +66,7 @@ const projects = () => {
               </div>
               <div className={stylesProjects.elementsContainer}>
                 <div className={stylesProjects.textContainer}>
-                  <p style={{fontWeight:"bold"}}>What is is:</p>
+                  <p style={{fontWeight:"bold"}}>What it is:</p>
                   <p>{"\u003e"} NimGame is a simple mathematical game which uses matches in which you play against the computer, your goal is to win, and the computer{"\u0027"}s goal is to cheat and win, so you can guess the outcome...</p>
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>How it works:</p>
