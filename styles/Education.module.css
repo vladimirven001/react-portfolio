@@ -54,7 +54,7 @@
 
 .first{
   height: 2.5vw;
-  width: calc(52/113*100%);
+  width: calc(72/113*100%);
   border-radius: 1vh;
   position: absolute;
   background-color: #339989;
@@ -66,14 +66,14 @@
 
 .second{
   height: 2.5vw;
-  width: calc(64/113*100%);
+  width: calc(85/113*100%);
   border-radius: 1vh;
   position: absolute;
   background-color: #3db8a5;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: calc(52/113*100%);
+  padding-left: calc(72/113*100%);
 }
 
 .bottomContainer {
