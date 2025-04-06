@@ -34,7 +34,7 @@ const projects = () => {
                   </a>
                 </div>
                 <div className={stylesProjects.imageContainer}>
-                  
+                  <img src='watchmatch.png'></img>
                 </div>
               </div>              
             </div>

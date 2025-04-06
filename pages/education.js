@@ -49,7 +49,7 @@ const education = () => {
               <div style={{width:"10vw"}}></div>
               <div className={stylesEducation.secondCard}>
                 <div className={stylesEducation.cardContent}>
-                    <p className={stylesEducation.preCardTextSubtitle}>01/2025</p>
+                    <p className={stylesEducation.preCardTextSubtitle}>05/2025</p>
                     <p className={stylesEducation.preCardText}>hover me</p>
                     <div className={stylesEducation.hoverContent}>
                       <p className={stylesEducation.cardTextSubtitle} style={{fontWeight:"bold"}}>01/2025</p>

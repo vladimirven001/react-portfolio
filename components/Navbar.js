@@ -4,7 +4,7 @@ import NavItem from "./NavItem";
 const menu_list = [
   { text: "projects", href: "/projects" },
   // { text: "experience", href: "/experience" },
-  { text: "education", href: "/education" },
+  // { text: "education", href: "/education" },
   { text: "skills", href: "/skills" },
   // { text: "contact", href: "/contact" },
 ];
