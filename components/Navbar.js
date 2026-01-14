@@ -5,7 +5,7 @@ const menu_list = [
   { text: "projects", href: "/projects" },
   // { text: "experience", href: "/experience" },
   // { text: "education", href: "/education" },
-  { text: "skills", href: "/skills" },
+  // { text: "skills", href: "/skills" },
   // { text: "contact", href: "/contact" },
 ];
 const Navbar = () => {
@@ -16,11 +16,35 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-          <a>
-            <h1 className="logo" style={{fontFamily: "consolas", color: "#3DB8A5", fontSize: "1.25rem", fontWeight: "normal"}}> {"<"}div{">"} </h1>
-            <h1 className="logo" style={{fontWeight: "normal"}}> {"\u00a0\u00a0\u00a0"}vladimir venkov</h1>
-            <h1 className="logo" style={{fontFamily: "consolas", color: "#3DB8A5", fontSize: "1.25rem", fontWeight: "normal"}}> {"<"}{"/"}div{">"} </h1>
-          </a>
+          <h1
+            className="logo"
+            style={{
+              fontFamily: "consolas",
+              color: "#3DB8A5",
+              fontSize: "1.25rem",
+              fontWeight: "normal",
+            }}
+          >
+            {" "}
+            {"<"}div{">"}{" "}
+          </h1>
+          <h1 className="logo" style={{ fontWeight: "normal" }}>
+            {" "}
+            {"\u00a0\u00a0\u00a0"}vladimir venkov
+          </h1>
+          <h1
+            className="logo"
+            style={{
+              fontFamily: "consolas",
+              color: "#3DB8A5",
+              fontSize: "1.25rem",
+              fontWeight: "normal",
+            }}
+          >
+            {" "}
+            {"<"}
+            {"/"}div{">"}{" "}
+          </h1>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
