@@ -11,6 +11,7 @@
     repeating-linear-gradient(90deg, transparent 0 17px, rgba(29, 75, 145, 0.08) 17px 18px),
     linear-gradient(180deg, #eef9ff, #d7edf9 50%, #f8f1d1);
   font-family: Tahoma, Verdana, Arial, sans-serif;
+  text-transform: lowercase;
 }
 
 .page * {
