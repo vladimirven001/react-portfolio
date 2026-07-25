@@ -41,10 +41,10 @@ export default function GeoPortfolio() {
   return (
     <>
       <Head>
-        <title>Vladimir Venkov - Software Engineer</title>
+        <title>vladimir venkov - software engineer</title>
         <meta
           name="description"
-          content="Vladimir Venkov is a McGill software engineering student building developer tools, study tools, and search systems."
+          content="vladimir venkov is a mcgill software engineering student building developer tools, study tools, and search systems."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
@@ -61,11 +61,11 @@ export default function GeoPortfolio() {
             />
           </div>
           <div className={styles.logoBox}>
-            <p>Welcome to</p>
+            <p>welcome to</p>
             <h1>{"vlad's webpage"}</h1>
             <span>software engineering @ mcgill</span>
           </div>
-          <nav className={styles.headerNav} aria-label="Main navigation">
+          <nav className={styles.headerNav} aria-label="main navigation">
             <a href="#home">home</a>
             <a href="#work">work</a>
             <a href="#projects">projects</a>
@@ -79,10 +79,10 @@ export default function GeoPortfolio() {
               <div className={styles.newsTicker}>
                 <span>check out openswe: npm i @vladimirven/openswe</span>
               </div>
-              <h2>Software engineering student at McGill</h2>
+              <h2>software engineering student at mcgill</h2>
               <p>
-                I am a Montreal-based software engineering student at McGill,
-                interested in developer tooling, AI-assisted workflows, and
+                i am a montreal-based software engineering student at mcgill,
+                interested in developer tooling, ai-assisted workflows, and
                 search systems.
               </p>
             </section>
@@ -132,7 +132,7 @@ export default function GeoPortfolio() {
                 <h2>guestbook</h2>
               </div>
               <div className={styles.contactBox}>
-                <p>Get in touch:</p>
+                <p>get in touch:</p>
                 <div>
                   {profileLinks.map((link) => (
                     <a
