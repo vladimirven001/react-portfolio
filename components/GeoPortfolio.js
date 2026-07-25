@@ -1,0 +1,159 @@
+import Head from "next/head";
+import ProjectImage from "./ProjectImage";
+import VisitorCounter from "./VisitorCounter";
+import { profileLinks, projects, workExperience } from "../data/portfolio";
+import { linkProps } from "../utils/linkProps";
+import styles from "../styles/GeoPortfolio.module.css";
+
+const [featuredProject, ...supportingProjects] = projects;
+
+function ProjectCard({ project, featured = false }) {
+  const cardClassName = featured
+    ? `${styles.projectCard} ${styles.featuredCard}`
+    : styles.projectCard;
+
+  return (
+    <article className={cardClassName}>
+      <h3>{project.title}</h3>
+      <div className={styles.projectMedia}>
+        <ProjectImage
+          placeholderClassName={styles.placeholderThumb}
+          project={project}
+        />
+      </div>
+      <p>{project.copy}</p>
+      <p className={styles.stack}>{project.stack}</p>
+      <div className={styles.projectLinks}>
+        <a href={project.href} {...linkProps(project.href)}>
+          source
+        </a>
+        {project.extraHref ? (
+          <a href={project.extraHref} {...linkProps(project.extraHref)}>
+            {project.extraLabel}
+          </a>
+        ) : null}
+      </div>
+    </article>
+  );
+}
+
+export default function GeoPortfolio() {
+  return (
+    <>
+      <Head>
+        <title>Vladimir Venkov - Software Engineer</title>
+        <meta
+          name="description"
+          content="Vladimir Venkov is a McGill software engineering student building developer tools, study tools, and search systems."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <div className={styles.page}>
+        <header id="home" className={styles.siteHeader}>
+          <div className={styles.topStrip}>
+            <span>best viewed at 1024x768</span>
+            <span>last updated: 07.2026</span>
+            <VisitorCounter
+              className={styles.visitorCounter}
+              digitsClassName={styles.visitorDigits}
+            />
+          </div>
+          <div className={styles.logoBox}>
+            <p>Welcome to</p>
+            <h1>{"vlad's webpage"}</h1>
+            <span>software engineering @ mcgill</span>
+          </div>
+          <nav className={styles.headerNav} aria-label="Main navigation">
+            <a href="#home">home</a>
+            <a href="#work">work</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">guestbook</a>
+          </nav>
+        </header>
+
+        <div className={styles.shell}>
+          <main className={styles.content}>
+            <section className={styles.heroPanel}>
+              <div className={styles.newsTicker}>
+                <span>check out openswe: npm i @vladimirven/openswe</span>
+              </div>
+              <h2>Software engineering student at McGill</h2>
+              <p>
+                I am a Montreal-based software engineering student at McGill,
+                interested in developer tooling, AI-assisted workflows, and
+                search systems.
+              </p>
+            </section>
+
+            <section id="work" className={styles.section}>
+              <div className={styles.sectionTitle}>
+                <span>01</span>
+                <h2>work experience</h2>
+              </div>
+              <div className={styles.workList}>
+                {workExperience.map((job) => (
+                  <article key={`${job.company}-${job.dates}`} className={styles.workCard}>
+                    <div>
+                      <h3>{job.title}</h3>
+                      <p>
+                        {job.company} <span>{job.dates}</span>
+                      </p>
+                    </div>
+                    <ul>
+                      {job.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section id="projects" className={styles.section}>
+              <div className={styles.sectionTitle}>
+                <span>02</span>
+                <h2>featured projects</h2>
+              </div>
+
+              <ProjectCard project={featuredProject} featured />
+
+              <div className={styles.projectGrid}>
+                {supportingProjects.map((project) => (
+                  <ProjectCard key={project.title} project={project} />
+                ))}
+              </div>
+            </section>
+
+            <section id="contact" className={styles.section}>
+              <div className={styles.sectionTitle}>
+                <span>03</span>
+                <h2>guestbook</h2>
+              </div>
+              <div className={styles.contactBox}>
+                <p>Get in touch:</p>
+                <div>
+                  {profileLinks.map((link) => (
+                    <a
+                      href={link.href}
+                      key={link.label}
+                      {...linkProps(link.href)}
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+
+        <footer className={styles.footer}>
+          <span>made with questionable taste</span>
+          <a href="#home">back to top</a>
+        </footer>
+      </div>
+    </>
+  );
+}

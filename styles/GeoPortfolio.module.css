@@ -1,0 +1,485 @@
+.page {
+  min-height: 100vh;
+  padding: 20px;
+  color: #171717;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(255, 244, 178, 0.65), transparent 18rem),
+    radial-gradient(circle at 86% 18%, rgba(183, 221, 255, 0.9), transparent 20rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.36) 25%, transparent 25%) 0 0 / 24px 24px,
+    linear-gradient(225deg, rgba(29, 75, 145, 0.08) 25%, transparent 25%) 0 0 / 24px 24px,
+    repeating-linear-gradient(0deg, transparent 0 17px, rgba(29, 75, 145, 0.08) 17px 18px),
+    repeating-linear-gradient(90deg, transparent 0 17px, rgba(29, 75, 145, 0.08) 17px 18px),
+    linear-gradient(180deg, #eef9ff, #d7edf9 50%, #f8f1d1);
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+.page * {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+.siteHeader,
+.shell,
+.footer {
+  width: min(1060px, calc(100vw - 40px));
+  margin-inline: auto;
+  min-width: 0;
+}
+
+.siteHeader {
+  position: static;
+  top: auto;
+  z-index: auto;
+  border: 3px solid #1d4b91;
+  background: #fff7c4;
+  box-shadow: 7px 7px 0 rgba(29, 75, 145, 0.28);
+}
+
+.topStrip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 10px;
+  color: #fff;
+  background: #143b78;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+}
+
+.visitorCounter {
+  white-space: nowrap;
+}
+
+.visitorDigits {
+  display: inline-block;
+  min-width: 6ch;
+  font-variant-numeric: tabular-nums;
+  text-align: left;
+}
+
+.logoBox {
+  padding: 18px 18px 16px;
+  text-align: center;
+  background:
+    linear-gradient(135deg, rgba(255, 218, 67, 0.78), rgba(255, 255, 255, 0.65)),
+    repeating-linear-gradient(-45deg, transparent 0 12px, rgba(53, 118, 196, 0.12) 12px 24px);
+}
+
+.logoBox p,
+.logoBox h1,
+.logoBox span {
+  margin: 0;
+}
+
+.logoBox p {
+  color: #c2297a;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logoBox h1 {
+  color: #1946a3;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive;
+  font-size: clamp(44px, 8vw, 86px);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  text-shadow: 3px 3px 0 #f5adc9;
+}
+
+.logoBox span {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 9px;
+  color: #111;
+  background: #fff;
+  border: 2px dotted #1d4b91;
+  font-weight: 700;
+}
+
+.headerNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  background: #f3d95f;
+  border-top: 2px solid #1d4b91;
+}
+
+.headerNav a,
+.projectLinks a,
+.contactBox a,
+.footer a {
+  color: #053d9c;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.headerNav a {
+  padding: 6px 10px;
+  color: #111;
+  text-decoration: none;
+  background: #fffdf0;
+  border: 2px outset #ffffff;
+}
+
+.shell {
+  margin-top: 16px;
+}
+
+.content {
+  min-width: 0;
+}
+
+.heroPanel,
+.section,
+.footer {
+  min-width: 0;
+  max-width: 100%;
+  border: 3px ridge #ffffff;
+  background: #fffdf0;
+}
+
+.content {
+  display: grid;
+  gap: 14px;
+}
+
+.heroPanel {
+  padding: 14px;
+}
+
+.newsTicker {
+  overflow: hidden;
+  padding: 7px 9px;
+  color: #fff;
+  background: #b82c75;
+  border: 2px solid #7a1a4c;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+}
+
+.newsTicker span {
+  display: inline-block;
+  animation: ticker 12s linear infinite;
+  white-space: nowrap;
+}
+
+.heroPanel h2 {
+  margin: 16px 0 8px;
+  color: #143b78;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+
+.heroPanel p {
+  max-width: 720px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section {
+  padding: 12px;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: -12px -12px 12px;
+  padding: 8px 10px;
+  color: #fff;
+  background: #1d4b91;
+  border-bottom: 3px solid #f3d95f;
+}
+
+.sectionTitle span {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 26px;
+  color: #111;
+  background: #f3d95f;
+  border: 2px outset #fff5af;
+  font-family: "Courier New", monospace;
+  font-weight: 900;
+}
+
+.sectionTitle h2 {
+  margin: 0;
+  font-size: 24px;
+  text-transform: lowercase;
+}
+
+.projectCard {
+  position: relative;
+  min-width: 0;
+  max-width: 100%;
+  padding: 12px;
+  background: #ffffff;
+  border: 2px solid #9fb3c5;
+  box-shadow: inset 0 0 0 3px #eef6ff;
+}
+
+.featuredCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(230px, 0.85fr);
+  align-items: start;
+  gap: 16px;
+  border-color: #9fb3c5;
+  background: #fffaf5;
+}
+
+.projectCard h3 {
+  margin: 0 0 8px;
+  color: #143b78;
+  font-size: 30px;
+  line-height: 0.95;
+}
+
+.projectMedia {
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 3px solid #143b78;
+  background: #e6eef7;
+}
+
+.projectMedia img,
+.placeholderThumb {
+  width: 100%;
+  height: 210px;
+}
+
+.projectMedia img {
+  display: block;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.featuredCard .projectMedia {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  margin: 0;
+}
+
+.featuredCard .projectMedia img {
+  height: 100%;
+  min-height: 300px;
+}
+
+.featuredCard h3,
+.featuredCard p,
+.featuredCard .projectLinks {
+  grid-column: 2;
+}
+
+.placeholderThumb {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.3), transparent 40%),
+    linear-gradient(135deg, #2d73ba, #143b78);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.projectCard p {
+  margin: 0;
+  line-height: 1.35;
+}
+
+.stack {
+  margin-top: 8px !important;
+  color: #5a4b00;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.projectLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.projectLinks a,
+.contactBox a {
+  padding: 6px 10px;
+  color: #111;
+  text-decoration: none;
+  background: #f3d95f;
+  border: 2px outset #fff5af;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.projectGrid .projectCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.projectGrid .projectCard h3 {
+  min-height: 34px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.projectGrid .projectMedia {
+  height: 172px;
+  flex: 0 0 172px;
+}
+
+.projectGrid .projectMedia img,
+.projectGrid .placeholderThumb {
+  height: 100%;
+}
+
+.projectGrid .projectCard > p:not(.stack) {
+  min-height: 54px;
+}
+
+.projectGrid .stack {
+  min-height: 18px;
+}
+
+.projectGrid .projectLinks {
+  margin-top: auto;
+}
+
+.workList {
+  display: grid;
+  gap: 10px;
+}
+
+.workCard {
+  display: grid;
+  grid-template-columns: minmax(165px, 0.38fr) minmax(0, 1fr);
+  gap: 12px;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #9fb3c5;
+  box-shadow: inset 0 0 0 3px #eef6ff;
+}
+
+.workCard h3 {
+  margin: 0 0 5px;
+  color: #143b78;
+  font-size: 20px;
+  line-height: 1.05;
+}
+
+.workCard p {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.workCard p span {
+  display: block;
+  margin-top: 3px;
+  color: #6b5a00;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+}
+
+.workCard ul {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.35;
+}
+
+.contactBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background: #fff;
+  border: 2px dotted #b82c75;
+}
+
+.contactBox p {
+  margin: 0;
+}
+
+.contactBox div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 10px;
+  font-size: 13px;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 860px) {
+  .featuredCard,
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredCard .projectMedia {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding: 10px;
+  }
+
+  .siteHeader,
+  .shell,
+  .footer {
+    width: 100%;
+  }
+
+  .topStrip,
+  .headerNav,
+  .contactBox,
+  .footer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logoBox h1 {
+    font-size: 42px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .newsTicker span {
+    animation: none;
+  }
+}

@@ -6,18 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "bootstrap": "^5.2.2",
     "next": "^16.1.1",
-    "next-portfolio-vladimir": "file:",
     "react": "^19.2.3",
-    "react-bootstrap": "^2.5.0",
-    "react-dom": "^19.2.3",
-    "react-icons": "^5.5.0",
-    "recharts": "^3.6.0",
-    "styled-components": "^6.0.8"
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "eslint": "9.39.2",

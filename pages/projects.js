@@ -1,10 +1,8 @@
-import React from 'react';
 import Footer from '../components/Footer'
 import stylesMain from '../styles/Home.module.css'
 import stylesProjects from '../styles/Projects.module.css'
-import '../public/thisWebsite.png'
 
-const projects = () => {
+const Projects = () => {
   return (
     <>
       <div className={stylesMain.container}>
@@ -30,11 +28,15 @@ const projects = () => {
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>Github:</p>
                   <a href="https://github.com/vladimirven001/WatchMatch/">
-                    <img style={{maxHeight:"50px"}} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"  />
+                    <img
+                      alt="GitHub"
+                      style={{maxHeight:"50px"}}
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    />
                   </a>
                 </div>
                 <div className={stylesProjects.imageContainer}>
-                  <img src='watchmatch.png'></img>
+                  <img alt="WatchMatch search screenshot" src="/watchmatch.png" />
                 </div>
               </div>              
             </div>
@@ -44,7 +46,7 @@ const projects = () => {
               </div>
               <div className={stylesProjects.elementsContainer}>
                 <div className={stylesProjects.imageContainer}>
-                  <img src='thisWebsite.png'></img>
+                  <img alt="Original portfolio screenshot" src="/thisWebsite.png" />
                 </div>
                 <div className={stylesProjects.textContainer}>
                   <p style={{fontWeight:"bold"}}>What it is:</p>
@@ -55,7 +57,11 @@ const projects = () => {
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>Github:</p>
                   <a href="https://github.com/vladimirven001/react-portfolio/">
-                    <img style={{maxHeight:"50px"}} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"  />
+                    <img
+                      alt="GitHub"
+                      style={{maxHeight:"50px"}}
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    />
                   </a>
                 </div>
               </div> 
@@ -78,11 +84,15 @@ const projects = () => {
                   <p>{"\u00a0"}</p>
                   <p style={{fontWeight:"bold"}}>Github:</p>
                   <a href="https://github.com/vladimirven001/NimGame/">
-                    <img style={{maxHeight:"50px"}} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"  />
+                    <img
+                      alt="GitHub"
+                      style={{maxHeight:"50px"}}
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    />
                   </a>
                 </div>
                 <div className={stylesProjects.imageContainer}>
-                  <img src='NimGame.png'></img>
+                  <img alt="NimGame screenshot" src="/NimGame.png" />
                 </div>
               </div> 
             </div>
@@ -94,4 +104,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
