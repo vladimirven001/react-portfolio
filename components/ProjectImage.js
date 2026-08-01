@@ -16,6 +16,9 @@ export default function ProjectImage({
       className={className}
       src={project.image}
       alt={project.imageAlt || `${project.title} screenshot`}
+      width={project.imageWidth}
+      height={project.imageHeight}
+      decoding="async"
     />
   );
 }

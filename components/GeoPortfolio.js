@@ -1,4 +1,5 @@
 import Head from "next/head";
+import CursorSparkles from "./CursorSparkles";
 import ProjectImage from "./ProjectImage";
 import VisitorCounter from "./VisitorCounter";
 import { profileLinks, projects, workExperience } from "../data/portfolio";
@@ -67,6 +68,7 @@ export default function GeoPortfolio() {
       </Head>
 
       <div className={styles.page}>
+        <CursorSparkles />
         <header id="home" className={styles.siteHeader}>
           <div className={styles.topStrip}>
             <span>best viewed at 1024x768</span>
@@ -85,7 +87,7 @@ export default function GeoPortfolio() {
             <a href="#home">home</a>
             <a href="#work">work</a>
             <a href="#projects">projects</a>
-            <a href="#contact">guestbook</a>
+            <a href="#contact">contact</a>
           </nav>
         </header>
 
@@ -98,7 +100,7 @@ export default function GeoPortfolio() {
               <h2>software engineering student at mcgill</h2>
               <p>
                 i am a montreal-based software engineering student at mcgill,
-                interested in terminal tools, finance, and interesting problems to solve.
+                interested in terminal tools, finance, and challenging problems.
               </p>
             </section>
 
@@ -145,7 +147,7 @@ export default function GeoPortfolio() {
             <section id="contact" className={styles.section}>
               <div className={styles.sectionTitle}>
                 <span>03</span>
-                <h2>guestbook</h2>
+                <h2>contact</h2>
               </div>
               <div className={styles.contactBox}>
                 <p>get in touch:</p>

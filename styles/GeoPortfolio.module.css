@@ -1,17 +1,32 @@
 .page {
+  position: relative;
+  overflow-x: hidden;
   min-height: 100vh;
   padding: 20px;
   color: #171717;
+  background-color: #dcf6ff;
   background:
-    radial-gradient(circle at 12% 10%, rgba(255, 244, 178, 0.65), transparent 18rem),
-    radial-gradient(circle at 86% 18%, rgba(183, 221, 255, 0.9), transparent 20rem),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.36) 25%, transparent 25%) 0 0 / 24px 24px,
-    linear-gradient(225deg, rgba(29, 75, 145, 0.08) 25%, transparent 25%) 0 0 / 24px 24px,
-    repeating-linear-gradient(0deg, transparent 0 17px, rgba(29, 75, 145, 0.08) 17px 18px),
-    repeating-linear-gradient(90deg, transparent 0 17px, rgba(29, 75, 145, 0.08) 17px 18px),
-    linear-gradient(180deg, #eef9ff, #d7edf9 50%, #f8f1d1);
+    radial-gradient(circle at 13% 9%, rgba(255, 244, 178, 0.78), transparent 17rem),
+    radial-gradient(circle at 86% 22%, rgba(160, 221, 255, 0.82), transparent 20rem),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.58) 0 2px, transparent 2px 18px),
+    repeating-linear-gradient(135deg, rgba(29, 75, 145, 0.08) 0 1px, transparent 1px 16px),
+    linear-gradient(180deg, #e8fbff 0%, #cfecfb 48%, #fff5bb 100%);
   font-family: Tahoma, Verdana, Arial, sans-serif;
   text-transform: lowercase;
+}
+
+.page::before {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  content: "";
+  background:
+    radial-gradient(circle at 8px 10px, rgba(255, 255, 255, 0.95) 0 1px, transparent 2px) 0 0 / 88px 88px,
+    radial-gradient(circle at 54px 28px, rgba(255, 237, 90, 0.65) 0 1px, transparent 2px) 0 0 / 134px 134px,
+    radial-gradient(circle at 24px 72px, rgba(190, 238, 255, 0.8) 0 1px, transparent 2px) 0 0 / 112px 112px,
+    repeating-linear-gradient(90deg, transparent 0 11px, rgba(20, 59, 120, 0.035) 11px 12px);
+  opacity: 0.85;
 }
 
 .page * {
@@ -21,6 +36,8 @@
 .siteHeader,
 .shell,
 .footer {
+  position: relative;
+  z-index: 1;
   width: min(1060px, calc(100vw - 40px));
   margin-inline: auto;
   min-width: 0;
@@ -139,7 +156,9 @@
   min-width: 0;
   max-width: 100%;
   border: 3px ridge #ffffff;
-  background: #fffdf0;
+  background:
+    repeating-linear-gradient(90deg, rgba(29, 75, 145, 0.035) 0 1px, transparent 1px 9px),
+    linear-gradient(180deg, #fffdf0, #fff8dc);
 }
 
 .content {
@@ -243,6 +262,7 @@
 
 .projectMedia {
   overflow: hidden;
+  aspect-ratio: 16 / 9;
   margin-bottom: 10px;
   border: 3px solid #143b78;
   background: #e6eef7;
@@ -251,13 +271,13 @@
 .projectMedia img,
 .placeholderThumb {
   width: 100%;
-  height: 210px;
+  height: 100%;
 }
 
 .projectMedia img {
   display: block;
   object-fit: cover;
-  object-position: top left;
+  object-position: center;
 }
 
 .featuredCard .projectMedia {
@@ -267,7 +287,6 @@
 }
 
 .featuredCard .projectMedia img {
-  height: 100%;
   min-height: 300px;
 }
 
@@ -338,8 +357,8 @@
 }
 
 .projectGrid .projectMedia {
-  height: 172px;
-  flex: 0 0 172px;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .projectGrid .projectMedia img,
@@ -471,6 +490,29 @@
   font-size: 13px;
 }
 
+.sparkleLayer {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cursorSparkle {
+  position: fixed;
+  color: var(--sparkle-color);
+  font-family: "Times New Roman", serif !important;
+  font-size: var(--sparkle-size);
+  font-weight: 900;
+  line-height: 1;
+  text-shadow:
+    1px 1px 0 #143b78,
+    0 0 6px rgba(255, 255, 255, 0.9);
+  transform: translate(-50%, -50%) scale(0.4);
+  animation: cursorSparkle 720ms steps(6, end) forwards;
+  will-change: opacity, transform;
+}
+
 @keyframes ticker {
   from {
     transform: translateX(100%);
@@ -478,6 +520,29 @@
 
   to {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes cursorSparkle {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.35) rotate(0deg);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(18deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform:
+      translate(
+        calc(-50% + var(--sparkle-x)),
+        calc(-50% + var(--sparkle-y))
+      )
+      scale(0.25)
+      rotate(90deg);
   }
 }
 
@@ -502,17 +567,6 @@
   .featuredCard .projectMedia img {
     height: 100%;
     min-height: 0;
-  }
-
-  .projectMedia {
-    aspect-ratio: 16 / 9;
-  }
-
-  .projectMedia img {
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    background: #fff;
   }
 
   .projectGrid .projectMedia {
@@ -565,5 +619,15 @@
 @media (prefers-reduced-motion: reduce) {
   .newsTicker span {
     animation: none;
+  }
+
+  .sparkleLayer {
+    display: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .sparkleLayer {
+    display: none;
   }
 }
