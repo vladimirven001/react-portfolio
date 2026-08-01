@@ -500,6 +500,7 @@
 
 .cursorSparkle {
   position: fixed;
+  opacity: 0;
   color: var(--sparkle-color);
   font-family: "Times New Roman", serif !important;
   font-size: var(--sparkle-size);
@@ -508,8 +509,8 @@
   text-shadow:
     1px 1px 0 #143b78,
     0 0 6px rgba(255, 255, 255, 0.9);
-  transform: translate(-50%, -50%) scale(0.4);
-  animation: cursorSparkle 720ms steps(6, end) forwards;
+  transform: translate3d(-50%, -50%, 0) scale(0.35) rotate(var(--sparkle-start-rotate));
+  animation: cursorSparkle var(--sparkle-duration) cubic-bezier(0.16, 1, 0.3, 1) forwards;
   will-change: opacity, transform;
 }
 
@@ -526,23 +527,36 @@
 @keyframes cursorSparkle {
   0% {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(0.35) rotate(0deg);
+    transform: translate3d(-50%, -50%, 0) scale(0.35) rotate(var(--sparkle-start-rotate));
   }
 
-  20% {
+  14% {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1) rotate(18deg);
+    transform: translate3d(-50%, -50%, 0) scale(1) rotate(0deg);
+  }
+
+  58% {
+    opacity: 0.88;
+    transform:
+      translate3d(
+        calc(-50% + var(--sparkle-mid-x)),
+        calc(-50% + var(--sparkle-mid-y)),
+        0
+      )
+      scale(0.82)
+      rotate(var(--sparkle-mid-rotate));
   }
 
   100% {
     opacity: 0;
     transform:
-      translate(
+      translate3d(
         calc(-50% + var(--sparkle-x)),
-        calc(-50% + var(--sparkle-y))
+        calc(-50% + var(--sparkle-y)),
+        0
       )
       scale(0.25)
-      rotate(90deg);
+      rotate(var(--sparkle-end-rotate));
   }
 }
 
