@@ -381,7 +381,7 @@
   line-height: 1.05;
 }
 
-.workCard p {
+.workMeta {
   margin: 0;
   color: #333;
   font-size: 14px;
@@ -389,18 +389,55 @@
   line-height: 1.35;
 }
 
-.workCard p span {
-  display: block;
+.dateRange {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.45ch;
+  row-gap: 0;
+  width: fit-content;
+  max-width: 100%;
   margin-top: 3px;
   color: #6b5a00;
   font-family: "Courier New", monospace;
   font-size: 12px;
+  line-height: 1.25;
+}
+
+.datePart,
+.dateDash {
+  white-space: nowrap;
+}
+
+.dateDash {
+  color: #143b78;
+  font-weight: 700;
 }
 
 .workCard ul {
+  display: grid;
+  gap: 4px;
   margin: 0;
-  padding-left: 18px;
+  padding-left: 0;
+  list-style: none;
   line-height: 1.35;
+}
+
+.workCard li {
+  position: relative;
+  padding-left: 1.45em;
+}
+
+.workCard li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: -0.03em;
+  color: #f3d95f;
+  font-size: 0.95em;
+  line-height: 1;
+  text-shadow:
+    1px 1px 0 #143b78,
+    -1px -1px 0 #fff5af;
 }
 
 .contactBox {
@@ -450,8 +487,45 @@
     grid-template-columns: 1fr;
   }
 
+  .featuredCard h3,
+  .featuredCard p,
+  .featuredCard .projectLinks,
+  .featuredCard .projectMedia {
+    grid-column: 1;
+  }
+
   .featuredCard .projectMedia {
     grid-row: auto;
+    margin-bottom: 10px;
+  }
+
+  .featuredCard .projectMedia img {
+    height: 100%;
+    min-height: 0;
+  }
+
+  .projectMedia {
+    aspect-ratio: 16 / 9;
+  }
+
+  .projectMedia img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
+  }
+
+  .projectGrid .projectMedia {
+    height: auto;
+    flex: 0 0 auto;
+  }
+
+  .projectGrid .projectMedia img {
+    height: 100%;
+  }
+
+  .projectGrid .placeholderThumb {
+    height: 100%;
   }
 }
 
@@ -476,6 +550,15 @@
 
   .logoBox h1 {
     font-size: 42px;
+  }
+
+  .workCard {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .workCard ul {
+    gap: 6px;
   }
 }
 

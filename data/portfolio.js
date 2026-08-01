@@ -30,7 +30,7 @@ export const workExperience = [
     dates: "may 2026 - present",
     bullets: [
       "working with the risk team on an internal health-check service for critical trading infrastructure.",
-      "building alerting, business approval flow, and ownership-routing features.",
+      "implementing alerting, observability, and auditing.",
       "providing l2 support for risk-related services.",
     ],
   },
@@ -40,8 +40,7 @@ export const workExperience = [
     dates: "may 2025 - august 2025",
     bullets: [
       "built scrapers and ingestion pipelines for quantitative research data.",
-      "developed a python standards framework with gitlab ci/cd and grafana reporting.",
-      "supported recovery communication during the june 12, 2025 global gcp outage.",
+      "developed a python evaluation framework for internal coding standards.",
     ],
   },
   {
@@ -49,7 +48,7 @@ export const workExperience = [
     title: "ai backend developer intern",
     dates: "january 2025 - may 2025",
     bullets: [
-      "re-architected an internal etl pipeline for better scalability and enterprise-tool integration.",
+      "re-architected an internal etl pipeline for better scalability and easier implementation of new features.",
       "turned stakeholder interviews into clear technical and business requirements.",
       "designed database schema and orm support for bilingual data and etl evidence tracking.",
     ],

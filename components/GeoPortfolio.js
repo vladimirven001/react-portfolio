@@ -7,6 +7,22 @@ import styles from "../styles/GeoPortfolio.module.css";
 
 const [featuredProject, ...supportingProjects] = projects;
 
+function DateRange({ value }) {
+  const [start, end] = value.split(" - ");
+
+  if (!end) {
+    return <span className={styles.dateRange}>{value}</span>;
+  }
+
+  return (
+    <span className={styles.dateRange}>
+      <span className={styles.datePart}>{start}</span>
+      <span className={styles.dateDash}>-</span>
+      <span className={styles.datePart}>{end}</span>
+    </span>
+  );
+}
+
 function ProjectCard({ project, featured = false }) {
   const cardClassName = featured
     ? `${styles.projectCard} ${styles.featuredCard}`
@@ -82,8 +98,7 @@ export default function GeoPortfolio() {
               <h2>software engineering student at mcgill</h2>
               <p>
                 i am a montreal-based software engineering student at mcgill,
-                interested in developer tooling, ai-assisted workflows, and
-                search systems.
+                interested in terminal tools, finance, and interesting problems to solve.
               </p>
             </section>
 
@@ -97,8 +112,9 @@ export default function GeoPortfolio() {
                   <article key={`${job.company}-${job.dates}`} className={styles.workCard}>
                     <div>
                       <h3>{job.title}</h3>
-                      <p>
-                        {job.company} <span>{job.dates}</span>
+                      <p className={styles.workMeta}>
+                        {job.company}
+                        <DateRange value={job.dates} />
                       </p>
                     </div>
                     <ul>
