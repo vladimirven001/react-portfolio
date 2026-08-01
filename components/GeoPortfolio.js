@@ -64,7 +64,8 @@ export default function GeoPortfolio() {
           content="vladimir venkov is a mcgill software engineering student building developer tools, study tools, and search systems."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
 
       <div className={styles.page}>

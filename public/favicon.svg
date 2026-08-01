@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="purple v favicon">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff6a8" />
+      <stop offset="0.5" stop-color="#ffe55b" />
+      <stop offset="1" stop-color="#68cff2" />
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2" dy="2" stdDeviation="0" flood-color="#1946a3" flood-opacity="0.9" />
+    </filter>
+  </defs>
+  <rect width="64" height="64" fill="#143b78" />
+  <rect x="5" y="5" width="54" height="54" fill="url(#tile)" stroke="#fffbd1" stroke-width="3" />
+  <path d="M7 57 L57 7 L57 19 L19 57 Z" fill="#ffffff" opacity="0.28" />
+  <path d="M10 11 H54 M10 53 H54 M11 10 V54 M53 10 V54" stroke="#1d4b91" stroke-width="2" opacity="0.45" />
+  <text
+    x="33"
+    y="46"
+    text-anchor="middle"
+    font-family="'Comic Sans MS', 'Trebuchet MS', cursive"
+    font-size="48"
+    font-weight="700"
+    fill="#b82c75"
+    filter="url(#shadow)"
+  >v</text>
+  <path d="M14 16 L17 23 L24 26 L17 29 L14 36 L11 29 L4 26 L11 23 Z" fill="#ffffff" />
+  <path d="M48 10 L50 15 L55 17 L50 19 L48 24 L46 19 L41 17 L46 15 Z" fill="#fff06f" />
+</svg>
